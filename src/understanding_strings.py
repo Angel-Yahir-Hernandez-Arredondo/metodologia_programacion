@@ -47,3 +47,34 @@ last_name = "mercury"
 full_name = first_name + " " + last_name
 print(" Nombre completo: ", full_name)
 print(full_name.title())
+
+# white spaces
+"""
+Un white space se refiere a cualquier caracter que no se imprime, es decir, un espacio, tabuladores o finales de linea.
+Los white spaces se utilizan comúnmente para organizar las salidas de tal manera que sea mas amigable de leer o ver para el usuario.
+
+Ejemplo:
+   - Tabulador: \t
+   - Salto de linea: \n
+"""
+
+print("Python")
+print("\tPython")
+print("\t\tPython")
+print("\t\t\tPython")
+
+print("Whitespace salto de linea")
+print("Languages: \n\tPython\nC\n\tJavaScript")
+
+# Eliminaciodn de espacios en blanco
+programming_languages =  " Python "
+print(programming_languages)
+print(programming_languages.rstrip())  # Elimina espacios a la derecha
+print(programming_languages.lstrip())  # Elimina espacios a la izquierda
+print(programming_languages.strip())   # Elimina espacios a ambos lados
+
+# Syntax error con strings
+message = 'Una fortaleza de python es su comunidad'
+print(message)
+message = "Una fortaleza de "python" es su comunidad"
+print(message)
