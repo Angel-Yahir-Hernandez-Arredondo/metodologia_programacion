@@ -76,5 +76,34 @@ print(programming_languages.strip())   # Elimina espacios a ambos lados
 # Syntax error con strings
 message = 'Una fortaleza de python es su comunidad'
 print(message)
-message = "Una fortaleza de "python" es su comunidad"
+message = "Una fortaleza de ""python"" es su comunidad"
 print(message)
+
+# Concatenacion
+first_name = "Angel"
+last_name = "Hernandez"
+full_name = first_name + " " + last_name
+print(full_name)
+
+# f-strings
+famous_person = "Taylor Swift"
+message = f"{famous_person} una vez dijo me voy al oxxo en avion"
+print(message)
+print(f"{famous_person.upper()} una vez dijo me voy al oxxo en avion")
+
+""" 
+   Elije el nonbre de una persona famosa (quien tu quieras).
+   Elije una cita famosa de esta persona.
+   Iguala ambos strings a una variable.
+   
+   1) Realiza la concatenacion usando el signo de suma
+   2) Realiza la concatenacion usando f-strings
+"""
+
+# Actividad
+famous_person = "Kobe Bryant"
+quote = "Si sientes miedo de fallar, probablemente fallarás"
+quote_message_concat = famous_person + " una vez dijo: " + quote
+print(quote_message_concat)
+quote_message_fstring = f"{famous_person} una vez dijo: {quote}"
+print(quote_message_fstring)
