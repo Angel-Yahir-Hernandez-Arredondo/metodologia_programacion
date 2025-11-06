@@ -115,3 +115,24 @@ print("\n")
 
 motorcycles.sort(reverse=True) #Ordena la lista en orden alfabetico inverso
 print(motorcycles) #Salida: ['yamaha', 'suzuki', 'honda', 'ducatti']
+
+"""
+   Ejemplo:
+"""
+
+students = ["jesus", "joshue", "andrik", "jen", "miguel", "africa"]
+print(students)
+desired_students = input("Ingresa el nombre del estudiante que deseas eliminar: ")
+students.remove(desired_students.strip().lower())
+print(students)
+students.reverse()
+print(students)
+print(len(students))  # Numero de elementos en la lista
+
+cars = ["bmw", "audi", "toyota", "subaru", "ferrari"]
+print(cars)         # Muestra la lista original sin modificar
+print(sorted(cars))  # Muestra la lista ordenada sin modificar la original
+sorted_cars = sorted(cars)
+print(sorted_cars)
+print("Lista original de cars:")
+print(cars)
