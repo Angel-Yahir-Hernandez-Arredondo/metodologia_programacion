@@ -1,4 +1,5 @@
 # Empty Dictionary
+'''
 homer_0 = {
     'color': 'yellow',
     'bag': 'maggie-bag',
@@ -54,8 +55,71 @@ for key in alien_0.keys():
 ##Looping though values
 for value in alien_0.values():
     print(f"\nValue: {value}")
-
+'''
 # NESTING
 # Listas de diccionarios
 # Listas en diccionario
 # Diccionarios en diccionarios
+
+covenant_grunt = {
+    "color": "orange",
+    "weapon": "plasma_gun",
+    "armament": "plasma-grenade",
+    "health": 2,
+}
+
+covenant_elite = {
+    "color": "blue",
+    "weapon": "plasma-sword",
+    "armament": "plasma-grenade",
+    "health": 7,
+}
+
+covenant_jackal = {
+    "color": "gray",
+    "weapon": "plasma-gun",
+    "armament": "plasma-grenade",
+    "health": 5,
+}
+
+covenants = [
+    covenant_grunt,
+    covenant_elite,
+    covenant_jackal
+]
+
+for covenant in covenants:
+    print("\n", covenant)
+    for key, value in covenant.items():
+        print(f"{key}: {value}")
+
+# Listas en diccionarios
+students = {
+    "santiago": ['reprobado', 'prepa1', 'rebelde'],
+    "jorge": ['aprobado', 'cbtis271', 'goleador'],
+    "gabriel": ['aprobado', '119muerte', 'fornite'],
+
+}
+
+# Diccionarios en diccionarios
+sensores= {
+    'temperatura': {
+        'id': 'temp_1',
+        'location': 'aula 105',
+        'value': 25,
+        'unit': 'Celsius',
+    },
+    'humedad': {
+        'id': 'hum_1',
+        'location': 'aula 103',
+        'value': 60,
+        'unit': 'Porcentaje',
+    }
+}
+
+print("Temperatura:")
+print(sensores['temperatura']['value'])
+print("Ubicacion:")
+print(sensores['temperatura']['location'])
+
+# Metodo get()
